@@ -33,14 +33,19 @@ namespace TrabGrupoM9C_Pert
         }
         private void btnMaior_Click(object sender, EventArgs e)
         {
-            int maiorNum=0;
+            int maiorNum=0,num,inf=0;
             for (int i = 0; i < File.ReadAllLines(path).Length; i++)
             {
-                int num = int.Parse(File.ReadAllLines(path)[i]);
+                num = int.Parse(File.ReadAllLines(path)[i]);
                 maiorNum = maior(maiorNum, num);
+                if (maiorNum>num)
+                {
+                    maiorNum = num;
+                    inf = i + 1;
+                }
             }
-
-            lblMaior.Text = $"Maior número: {maiorNum}";
+            
+            lblMaior.Text = $"Maior número: {maiorNum}, que se encontra na linha {inf}";
         }
         private int maior(int num1, int num2)
         {
