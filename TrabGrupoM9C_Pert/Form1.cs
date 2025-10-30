@@ -38,9 +38,8 @@ namespace TrabGrupoM9C_Pert
             {
                 num = int.Parse(File.ReadAllLines(path)[i]);
                 maiorNum = maior(maiorNum, num);
-                if (maiorNum>num)
+                if (maiorNum<=num)
                 {
-                    maiorNum = num;
                     inf = i + 1;
                 }
             }
