@@ -13,7 +13,7 @@ namespace TrabGrupoM9C_Pert
 {
     public partial class Form1 : Form
     {
-        public string path= @"C:\Users\Rodrigo Almeida\source\repos\Rodri-ghost\TrabalhosGrupoPSI\TrabGrupoM9C_Pert\bin\Debug\Maior.txt";
+        public string path= @"C:\Users\a6818\source\repos\Rodri-ghost\TrabalhosGrupoPSI\TrabGrupoM9C_Pert\bin\Debug\maior.txt";
         public Form1()
         {
             InitializeComponent();
